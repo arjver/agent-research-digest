@@ -1,0 +1,10 @@
+# Local user configuration, secrets, state, and generated outputs
+.env
+.env.*
+!.env.example
+state/
+local/
+outputs/
+*.log
+__pycache__/
+.DS_Store
