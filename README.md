@@ -32,6 +32,20 @@ Build the smallest suitable implementation, run the verification checklist, and 
 
 The agent needs access to the full guide, not just the repository title or a search snippet. No installation is required for the blueprint itself.
 
+### Example follow-up: an AI digest
+
+For an AI digest similar to the one this project grew out of, send this after the setup prompt:
+
+```text
+Set up a new "AI Digest".
+
+Track important AI model releases, open-source models, research, multimodal advances, agents/dev tools, inference improvements, and consequential business or policy news from the past day or two. Cover the whole ecosystem, not just big US labs. Check OpenAI, Anthropic, and DeepMind’s blogs, but search broadly too. Skip hype and routine minor updates.
+
+Run daily at 10 AM and 8 PM. Remember reported stories for about two weeks, allow meaningful follow-ups, and stay silent when nothing qualifies.
+```
+
+Specify your timezone and where you want the digest delivered, or let the agent ask before activation. The two daily editions should share one task's story history.
+
 ## Choose what to follow
 
 - **Open-ended:** discover developments throughout a topic or field.
