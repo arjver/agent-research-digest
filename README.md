@@ -4,7 +4,10 @@ A reusable blueprint that helps your agent set up recurring, sourced research di
 
 **Paste a prompt. Describe what you want to follow. Let your agent build the smallest working setup its environment supports.**
 
-This is a documentation-first starting point, not an application, hosted service, feed reader, or new agent runtime. No required language, database, search provider, scheduler, or output format. Scripts are optional implementation choices.
+**What this is:** Markdown guides that tell your agent what a recurring research workflow should do.  
+**What this is not:** An app, hosted service, feed reader, or agent runtime that runs the workflow for you.
+
+Built from an AI news digest and a niche technologies/companies watchlist running on my Hermes agent, refined over months. This blueprint generalizes those workflows for other topics and agents.
 
 ## Quick start
 
@@ -43,13 +46,28 @@ A research task owns its scope, preferences, history, and delivery settings. It 
 
 Multiple tasks are independent by default. Shared history across related tasks is opt-in. Pausing a task pauses all its underlying schedules; changing one edition affects only that edition.
 
-## What the blueprint asks the agent to do
+## What it's opinionated about
 
-1. Discover and test search, page access, scheduling, persistence, and delivery.
-2. Agree on scope, schedule/timezone, sources, significance criteria, and destination.
-3. Use native features first; add scripts only when they solve a real capability gap.
-4. Keep each run self-contained and retain history without mistaking discovered items for delivered stories.
-5. Verify a sample run, repeat-story handling, scheduling, and delivery before declaring success.
+- **Evidence over filler:** check recency, support claims with sources, and select for the user's interests—not a story quota.
+- **Continuity across runs:** remember reported facts, suppress repeats across different URLs, and allow meaningful follow-ups.
+- **Honest failure handling:** failed collection is not “nothing new,” and a prepared digest is not proof of delivery.
+- **User control:** agree on scope and get approval before activating schedules or sending external tests; leave unrelated tasks untouched.
+- **Verification over promises:** test capabilities, sample output, repeat-story handling, scheduling, and delivery; disclose what remains blocked or untested.
+
+## What it's not opinionated about
+
+- **Agent or model:** no required provider, agent framework, or runtime.
+- **Implementation stack:** no required language, database, file layout, search provider, or scheduler. Scripts are optional.
+- **Research subject:** broad topics, niche interests, named companies, or specific sources all fit.
+- **Cadence and presentation:** the user chooses schedules, destinations, language, depth, and output format.
+
+## Key design decisions
+
+- **Specify behavior, not a stack.** The guides describe what must work; the agent discovers and tests how to achieve it in its environment. Prefer native capabilities and add code only where useful.
+- **Separate discovery modes.** Open-ended, watchlist-only, and hybrid research have different boundaries; the agent should not silently broaden a watchlist or skip required sources.
+- **Model tasks separately from jobs.** Editions of one task share story history; unrelated tasks stay isolated by default. Platform jobs are implementation details, not the user's unit of organization.
+- **Separate research progress from delivery.** Track discovered, evaluated, prepared, and delivered items distinctly so fetch limits and failed sends do not silently lose work.
+- **Make recurring runs independent of the setup chat.** Keep a durable brief, history, and job mapping that fresh sessions can use, with instructions for changing, pausing, resuming, and deleting the task.
 
 A platform without durable scheduling cannot promise autonomous delivery. The agent must explain the limitation and offer an explicitly manual workflow or an approved external scheduler.
 
@@ -69,10 +87,6 @@ These documents define expected behavior; they do not enforce it. Quality depend
 This repository is not a tested compatibility claim for any particular agent. Platform commands must be discovered from that platform's current documentation. Do not install an extra framework merely to follow this guide.
 
 The guide supplies no credentials, personal histories, live jobs, or required subscriptions. Model/search usage may incur costs; the setup agent should explain those dependencies.
-
-## Contributing
-
-Useful contributions include clearer requirements, documented implementation experiences, and reproducible acceptance results. Keep provider-specific instructions optional. Do not replace behavior requirements with a mandatory technology stack or commit user state/secrets.
 
 ## License
 
