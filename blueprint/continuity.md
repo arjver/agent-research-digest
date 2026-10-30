@@ -27,6 +27,8 @@ Track coverage checkpoints per collection scope or edition when their lookbacks 
 
 Track successful coverage independently from delivery status. A successful research run with no new stories can advance coverage; a failed run cannot. Partial failures should retain per-source gaps or an equivalent retry record. A prepared-but-undelivered digest may have completed research but still requires delivery reconciliation.
 
+When recording a failed check, preserve the last successful checkpoint for that scope alongside the failure or gap. Failure metadata must not erase or replace the checkpoint needed for catch-up; advance it only when successful coverage justifies doing so.
+
 Use overlap around coverage boundaries to handle indexing delays and publication timezones. On recovery, catch up from the appropriate checkpoint subject to the agreed limit. Explain omitted backlog or incomplete coverage. Do not treat a capped catch-up as exhaustive.
 
 ## Concurrency and retries

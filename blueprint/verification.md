@@ -23,16 +23,19 @@ These scenarios are conditional robustness checks, not an obligation to build or
 
 Use a disposable sandbox, mock delivery, or explicitly approved live test. Never send invented news as an actual digest. Record expected result, observed result, and evidence for each exercised scenario; unrun scenarios remain untested.
 
+For failure handling that depends on the host scheduler or delivery integration, test the actual integration behavior, not only a helper's returned status. Verify whether the host stops, continues, retries, or sends a notice as intended. An isolated helper test does not establish end-to-end behavior; disclose any integration boundary left untested.
+
 | Scenario | Expected behavior |
 | --- | --- |
 | First run on a long-lived blog | Respect initial lookback; do not dump the entire archive. |
 | Same event, different outlet/URL | Suppress or merge the repeated facts. |
+| History at a realistic retention-window size | Retained facts remain accessible for deduplication and follow-up checks within actual context/output limits. Compaction or paged retrieval must not silently omit needed evidence; exercise retrieval beyond the first page when applicable. |
 | Material follow-up | Include new information and identify the change. |
 | Watched page changes at the same URL | Detect meaningful changes despite URL history. |
 | Article cap reached | Unprocessed candidates remain eligible. |
 | Successful run with no qualifying items | Verified silent behavior, unless user requested empty reports. |
 | Search/page access fails | Failure/gap recorded; not interpreted as no news. |
-| Some required sources fail | Useful output may continue with a coverage caveat; gaps remain retryable. |
+| Some required sources fail | Useful output may continue with a coverage caveat; gaps remain retryable, and failed-check metadata preserves each scope's last successful checkpoint for catch-up. |
 | Delivery fails after report preparation | Pending digest survives; facts are not falsely marked delivered. |
 | Delivery timeout has unknown outcome | Reconcile or disclose uncertainty; no false success claim. |
 | Part of a split or multi-destination report fails | Retry only unconfirmed parts/destinations. |
