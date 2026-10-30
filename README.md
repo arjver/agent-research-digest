@@ -1,10 +1,12 @@
 # agent-research-digest
 
-A reusable blueprint that helps your agent set up recurring, sourced research digests around your interests.
+A reusable agent-agnostic blueprint that helps your agent set up recurring, sourced research digests around your interests.
 
-**Paste a prompt. Describe what you want to follow. Let your agent build the smallest working setup its environment supports.**
+Opinionated about requirements (avoiding duplicate stories semantically, when to include follow-ups, etc.). Unopinionated about implementation (the agent figures out what would work best in your setup).
 
-**What this is:** Markdown guides that tell your agent what a recurring research workflow should do.  
+**Paste a prompt. Describe what you want to follow. Let your agent build a setup its environment supports.**
+
+**What this is:** Markdown guides that tell your agent what all a recurring research workflow should do.  
 **What this is not:** An app, hosted service, feed reader, or agent runtime that runs the workflow for you.
 
 Built from an AI news digest and a niche technologies/companies watchlist running on my Hermes agent, refined over months. This blueprint generalizes those workflows for other topics and agents.
