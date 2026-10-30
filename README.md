@@ -6,13 +6,28 @@ A reusable blueprint that helps your agent set up recurring, sourced research di
 
 This is a documentation-first starting point, not an application, hosted service, feed reader, or new agent runtime. No required language, database, search provider, scheduler, or output format. Scripts are optional implementation choices.
 
-## Start
+## Quick start
 
-1. Download this repository or make its files available to your agent.
-2. Copy the prompt in [START.md](START.md). It references this repository; substitute your local checkout directory if your agent cannot access the URL.
-3. Your agent checks its capabilities, asks for your research preferences, and implements and tests the workflow.
+Copy and paste this prompt into your agent. If the repository is private, provide an authorized local checkout or upload the files and substitute that location.
 
-The agent needs access to the guide's contents, not just a repository title or search snippet. A URL works only if that agent can read the repository files. Upload the files or provide a local checkout otherwise.
+```text
+Help me set up recurring research digests using agent-research-digest at:
+https://github.com/arjver/agent-research-digest
+
+Read README.md and the setup, research, continuity, and verification guides in blueprint/ before implementing anything. Resolve those paths relative to the location above. If you cannot access the documents, tell me what is missing; do not pretend to have read them.
+
+Treat this as a functionality blueprint, not a required software stack. Discover and test how your environment searches the web, reads pages, schedules autonomous tasks, persists history, and delivers results. Use current platform documentation rather than guessing commands. Use native capabilities first and build scripts only if necessary.
+
+Check for existing related research tasks without altering them. Ask whether I am creating or modifying a task if my intent is unclear. Gather my topics/entities, specific sources, discovery mode (open-ended, watchlist-only, or hybrid), selection preferences, schedule and timezone, and delivery destination. Offer sensible defaults for length, quiet runs, history, and resource limits. Ask only for preferences you cannot infer safely from what I supply.
+
+Treat each research task as one logical unit with its own brief and history. It can have multiple schedules or editions backed by several platform jobs. Keep different tasks isolated unless I explicitly request shared history.
+
+Before activating recurring work or sending an external test, show me the proposed scope, schedules, destinations, dependencies/costs, and any material limitations, and obtain approval unless I have already explicitly approved that exact setup. Do not modify unrelated jobs, buy services, or publish anything.
+
+Build the smallest suitable implementation, run the verification checklist, and report actual results. Leave a readable task brief, the mapping to any underlying jobs/files, and instructions for changing, pausing, resuming, and deleting the task. Distinguish verified capabilities from anything blocked or untested. Never claim an autonomous setup is complete if it cannot run without this chat.
+```
+
+The agent needs access to the full guide, not just the repository title or a search snippet. No installation is required for the blueprint itself.
 
 ## Choose what to follow
 
@@ -46,8 +61,6 @@ A platform without durable scheduling cannot promise autonomous delivery. The ag
 - [Verification](blueprint/verification.md): acceptance checks and scenario tests.
 - [Task brief](templates/task-brief.md): optional portable handoff template.
 - [Open-ended example](examples/broad-topic.md), [watchlist example](examples/source-watchlist.md), [hybrid example](examples/hybrid.md).
-
-See [local draft verification](REVIEW.md) for checks performed and what has not been tested.
 
 ## Scope and limits
 
