@@ -11,12 +11,6 @@ Opinionated about requirements (avoiding duplicate stories semantically, when to
 
 Built from an AI news digest and a niche technologies/companies watchlist running on my Hermes agent, refined over months. This blueprint generalizes those workflows for other topics and agents.
 
-## Example output
-
-An excerpt from the original Hermes AI news digest that inspired this blueprint, delivered in Telegram. Topics, format, schedule, and delivery destination are configurable; this is an example, not a required output format.
-
-<img src="assets/ai-digest-example.png" alt="Telegram AI digest showing three stories with concise factual bullets, qualifications, and source links: a Cursor extension security incident, a UK investigation into Meta's AI content terms, and Anthropic subscription changes." width="480">
-
 ## Quick start
 
 Copy and paste this prompt into your agent. If the repository is private, provide an authorized local checkout or upload the files and substitute that location.
@@ -53,6 +47,13 @@ Run daily at 10 AM and 8 PM. Remember reported stories for about two weeks, allo
 ```
 
 Specify your timezone and where you want the digest delivered, or let the agent ask before activation. The two daily editions should share one task's story history.
+
+## Example output
+
+An example from my news digest, delivered in Telegram. Topics, format, schedule, and delivery destination are configurable; this is an example, not a required output format.
+
+<img src="assets/ai-digest-example.png" alt="Telegram AI digest showing three stories with concise factual bullets, qualifications, and source links: a Cursor extension security incident, a UK investigation into Meta's AI content terms, and Anthropic subscription changes." width="480">
+
 
 ## Choose what to follow
 
