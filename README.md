@@ -100,6 +100,8 @@ A platform without durable scheduling cannot promise autonomous delivery. The ag
 
 These documents define expected behavior; they do not enforce it. Quality depends on the host agent, sources, tools, and implementation. A prompt does not guarantee factual accuracy, exhaustive coverage, or exactly-once delivery.
 
+**Use at your own risk.** External sources can contain prompt injections that attempt to redirect your agent or misuse its access; these instructions cannot eliminate that risk. Sources and generated digests may contain misinformation, inaccuracies, or omissions. Verify important claims independently and use your own judgment before acting on them.
+
 This repository is not a tested compatibility claim for any particular agent. Platform commands must be discovered from that platform's current documentation. Do not install an extra framework merely to follow this guide.
 
 The guide supplies no credentials, personal histories, live jobs, or required subscriptions. Model/search usage may incur costs; the setup agent should explain those dependencies.
