@@ -41,7 +41,7 @@ For an AI digest similar to the one this project grew out of, send this after th
 ```text
 Set up a new "AI Digest".
 
-Track important AI model releases, open-source models, research, multimodal advances, agents/dev tools, inference improvements, and consequential business or policy news from the past day or two. Cover the whole ecosystem, not just big US labs. Check OpenAI, Anthropic, and DeepMind’s blogs, but search broadly too. Skip hype and routine minor updates.
+Track important AI model releases, open-source models, research, multimodal advances, agents/dev tools, inference improvements, and consequential business or policy news from the past day or two. Cover the whole ecosystem, not just big US labs. Check OpenAI, Anthropic, and DeepMind’s blogs, but search broadly too. Skip marketing fluff, hype, and routine minor updates.
 
 Run daily at 10 AM and 8 PM. Remember reported stories for about two weeks, allow meaningful follow-ups, and stay silent when nothing qualifies.
 ```

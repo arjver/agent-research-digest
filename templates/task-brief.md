@@ -12,6 +12,7 @@ Use this as a readable handoff, not a required storage schema. Record values, no
 - Topics and entities:
 - Required sources (URLs):
 - Preferred sources (URLs):
+- Coverage intent (comprehensive / curated):
 - Inclusions/significance threshold:
 - Exclusions:
 - Material follow-up policy:

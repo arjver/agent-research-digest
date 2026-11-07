@@ -28,6 +28,7 @@ Ask only unresolved questions, grouping independent questions together:
 - Discovery mode: **open-ended**, **watchlist-only**, or **hybrid**.
 - Specific source URLs and whether each is required or preferred. Sources may be feeds, listing pages, or pages whose content changes in place.
 - Inclusion/exclusion criteria: significance, types of developments, and useful follow-ups.
+- Coverage intent: comprehensive coverage of qualifying developments or a curated selection of the most important ones. Infer from the request when clear; concise presentation does not imply selective coverage.
 - Schedule(s), timezone, delivery destination(s), and any edition-specific differences.
 - Desired detail/language, optional layout, quiet-on-no-change preference, budget/runtime constraints.
 
