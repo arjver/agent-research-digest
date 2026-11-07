@@ -41,12 +41,20 @@ For an AI digest similar to the one this project grew out of, send this after th
 ```text
 Set up a new "AI Digest".
 
-Track important AI model releases, open-source models, research, multimodal advances, agents/dev tools, inference improvements, and consequential business or policy news from the past day or two. Cover the whole ecosystem, not just big US labs. Check OpenAI, Anthropic, and DeepMind’s blogs, but search broadly too. Skip marketing fluff, hype, and routine minor updates.
+Find ALL high-signal AI news from the previous 12–24 hours, prioritizing developments since the last edition. Aim for comprehensive coverage of qualifying developments, not a fixed number of stories or a small curated selection.
 
-Run daily at 10 AM and 8 PM. Remember reported stories for about two weeks, allow meaningful follow-ups, and stay silent when nothing qualifies.
+Cover major model releases, significant open-source releases, research and architectural advances, multimodal capabilities, AI safety/alignment, agents and developer tools, inference improvements, and consequential business or policy news.
+
+Check OpenAI, Anthropic, and Google DeepMind’s blogs every run. Also search for substantive developments involving Meta AI, Mistral, Hugging Face, Cohere, xAI, Stability AI, Apple AI, Amazon/AWS AI, Microsoft AI, and NVIDIA AI. These are a coverage floor, not an exclusive list—search globally beyond them when relevant.
+
+Skip marketing fluff, hype, generic funding announcements, routine minor updates, and unsupported rumors. Apply the same significance standard regardless of organization size.
+
+Use a bold date/edition header, bold informative headlines, 2–4 concise bullets per story, and labeled clickable source links. Explain what happened, why it matters, and important availability or limitations. Distinguish company claims from independent results and announced products from actual releases. Briefly disclose material coverage gaps.
+
+Run daily at 11 AM and 8 PM America/Los_Angeles. Ask where to deliver it before activation. Both editions should use the same scope and share about two weeks of reported-story history. Allow material follow-ups, explain what changed, and stay silent after successful research when nothing qualifies.
 ```
 
-Specify your timezone and where you want the digest delivered, or let the agent ask before activation. The two daily editions should share one task's story history.
+Adjust the example’s schedule and timezone to your preferences, and specify where you want the digest delivered or let the agent ask before activation. The two daily editions should share one task's story history.
 
 ## Example output
 
