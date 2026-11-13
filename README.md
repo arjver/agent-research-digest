@@ -58,10 +58,12 @@ Adjust the example’s schedule and timezone to your preferences, and specify wh
 
 ## Example output
 
-An example from my news digest, delivered in Telegram. Topics, format, schedule, and delivery destination are configurable; this is an example, not a required output format.
+Examples from my news digests: **Telegram** first, **Muse** second. Topics, format, schedule, and delivery destination are configurable; these are examples, not required output formats. Click either screenshot to view it at full size.
 
-<img src="assets/ai-digest-example.png" alt="Telegram AI digest showing three stories with concise factual bullets, qualifications, and source links: a Cursor extension security incident, a UK investigation into Meta's AI content terms, and Anthropic subscription changes." width="480">
-
+<p>
+  <a href="assets/ai-digest-example.png"><img src="assets/ai-digest-example.png" alt="Telegram AI digest example with concise story summaries and source links." width="360" align="top"></a>
+  <a href="assets/muse-digest-example.png"><img src="assets/muse-digest-example.png" alt="Muse AI digest example with dated headlines, detailed bullet summaries, caveats, and source links." width="360" align="top"></a>
+</p>
 
 ## Choose what to follow
 
@@ -120,6 +122,14 @@ These documents define expected behavior; they do not enforce it. Quality depend
 This repository is not a tested compatibility claim for any particular agent. Platform commands must be discovered from that platform's current documentation. Do not install an extra framework merely to follow this guide.
 
 The guide supplies no credentials, personal histories, live jobs, or required subscriptions. Model/search usage may incur costs; the setup agent should explain those dependencies.
+
+## Disclaimer
+
+**Use at your own risk.** These guides, prompts, templates, examples, and instructions are provided **“AS IS” and “AS AVAILABLE,” without warranties of any kind, express or implied**, including warranties of merchantability, fitness for a particular purpose, and noninfringement.
+
+You are responsible for reviewing the instructions, configuring and supervising your agent, protecting credentials and data, verifying important information, and deciding whether the workflow is suitable for your use. There is no guarantee of accuracy, completeness, timeliness, security, reliability, or continued availability.
+
+**To the maximum extent permitted by applicable law, the authors and contributors shall not be liable for any claims, damages, losses, costs, or other liability arising from or related to the use of, or inability to use, this project**, whether in contract, tort, or otherwise. This includes errors or omissions in research, missed or duplicated notifications, agent actions, data loss or disclosure, service costs, and decisions made in reliance on generated content.
 
 ## License
 
