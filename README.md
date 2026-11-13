@@ -58,7 +58,7 @@ Adjust the example’s schedule and timezone to your preferences, and specify wh
 
 ## Example output
 
-Examples from my news digests: **Telegram** first, **Muse** second. Topics, format, schedule, and delivery destination are configurable; these are examples, not required output formats. Click either screenshot to view it at full size.
+Examples from my news digests: **Hermes** first (delivered in Telegram), **Muse** second. Topics, format, schedule, and delivery destination are configurable; these are examples, not required output formats. Click either screenshot to view it at full size.
 
 <p>
   <a href="assets/ai-digest-example.png"><img src="assets/ai-digest-example.png" alt="Telegram AI digest example with concise story summaries and source links." width="360" align="top"></a>
